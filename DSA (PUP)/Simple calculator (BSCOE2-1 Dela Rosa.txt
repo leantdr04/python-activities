@@ -1,0 +1,36 @@
+# Simple Calculator
+print("Operation to use in Calculator: \n"
+      "1 for Add \n"
+      "2 for Subtract \n"
+      "3 for Multiply \n"
+      "4 for Divide \n")
+
+# Ask user to input first and second number
+num1 = (int(input("Enter first number: ")))
+num2 = (int(input("Enter second number: ")))
+
+# Ask user to input which operation to use
+operationChoice = int(input("Enter number of designated operation you would like to use (1, 2, 3 or 4): "))
+if operationChoice == 1:
+    print("Operation: Add")
+    print(f'{num1} + {num2} = {num1 + num2}')
+    input()
+
+elif operationChoice == 2:
+    print("Operation: Subtract")
+    print(f'{num1} - {num2} = {num1 - num2}')
+    input()
+
+elif operationChoice == 3:
+    print("Operation: Multiply")
+    print(f'{num1} * {num2} = {num1 * num2}')
+    input()
+
+elif operationChoice == 4:
+    print("Operation: Divide")
+    print(f'{num1} / {num2} = {num1 / num2}')
+    input()
+
+else:
+    print("Error")
+    input()
